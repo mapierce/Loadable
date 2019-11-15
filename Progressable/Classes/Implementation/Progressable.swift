@@ -11,7 +11,7 @@ public protocol Progressable {
 
     var currentProgress: Float { get set }
     var monitoredProgress: Progress? { get set }
-    var progressColor: UIColor? { get set }
+    var progressColor: UIColor { get set }
     var animateProgress: Bool { get set }
     var showPercentage: Bool { get set }
     var progressPercentageFontSize: CGFloat { get set }
@@ -68,8 +68,8 @@ extension UIView: Progressable {
         }
     }
 
-    public var progressColor: UIColor? {
-        get { objc_getAssociatedObject(self, &Constants.progressColorKey) as? UIColor }
+    public var progressColor: UIColor {
+        get { objc_getAssociatedObject(self, &Constants.progressColorKey) as? UIColor ?? getAppropriateBackgroundColor() }
         set { objc_setAssociatedObject(self, &Constants.progressColorKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
     }
 
@@ -120,7 +120,7 @@ extension UIView: Progressable {
     private func moveProgressBar(to width: CGFloat) {
         if progressView == nil {
             progressView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: frame.height))
-            progressView?.backgroundColor = progressColor ?? getAppropriateBackgroundColor()
+            progressView?.backgroundColor = progressColor
             addSubview(progressView!)
             sendSubviewToBack(progressView!)
             clipsToBounds = true
