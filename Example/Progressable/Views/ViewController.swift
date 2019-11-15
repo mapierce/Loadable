@@ -11,15 +11,24 @@ import Progressable
 
 class ViewController: UIViewController {
 
+    let progress = Progress(totalUnitCount: 50)
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        Test()
+        view.monitoredProgress = progress
+        view.progressColor = .green
+        view.showPercentage = true
+        view.progressPercentageFontColor = .black
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    // MARK: - Actions
+
+    @IBAction func clickMePressed(_ sender: Any) {
+        progress.completedUnitCount += 1
+        if progress.completedUnitCount > progress.totalUnitCount {
+            progress.completedUnitCount = 0
+        }
     }
 
 }

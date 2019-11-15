@@ -9,34 +9,18 @@
 Pod::Spec.new do |s|
   s.name             = 'Progressable'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of Progressable.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.summary          = 'Make any UIView a UIProgressView'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Now you can make any UIView or subclass into a UIProgressView and show progress wherever you like
                        DESC
 
   s.homepage         = 'https://github.com/Matthew Pierce/Progressable'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Matthew Pierce' => 'matthew.pierce@distilled.ie' }
+  s.author           = { 'Matthew Pierce' => 'mp.mapierce@gmail.com' }
   s.source           = { :git => 'https://github.com/Matthew Pierce/Progressable.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
-
+  s.social_media_url = 'https://twitter.com/PierceMatthew'
+  s.ios.deployment_target = '11.0'
   s.source_files = 'Progressable/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'Progressable' => ['Progressable/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.swift_version = '5.0'
+  s.frameworks = 'UIKit'
 end

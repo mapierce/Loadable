@@ -1,0 +1,6 @@
+framework module Progressable {
+  umbrella header "Progressable-umbrella.h"
+
+  export *
+  module * { export * }
+}

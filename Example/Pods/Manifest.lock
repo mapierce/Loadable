@@ -1,0 +1,16 @@
+PODS:
+  - Progressable (0.1.0)
+
+DEPENDENCIES:
+  - Progressable (from `../`)
+
+EXTERNAL SOURCES:
+  Progressable:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Progressable: 697350e290ac13c16013f7515b721d0b053f91a0
+
+PODFILE CHECKSUM: fc637d27f3a4dba6314cf883b3989f688d715484
+
+COCOAPODS: 1.5.0

@@ -1,0 +1,25 @@
+{
+  "name": "Progressable",
+  "version": "0.1.0",
+  "summary": "Make any UIView a UIProgressView",
+  "description": "Now you can make any UIView or subclass into a UIProgressView and show progress wherever you like",
+  "homepage": "https://github.com/Matthew Pierce/Progressable",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Matthew Pierce": "mp.mapierce@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Matthew Pierce/Progressable.git",
+    "tag": "0.1.0"
+  },
+  "social_media_url": "https://twitter.com/PierceMatthew",
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source_files": "Progressable/Classes/**/*",
+  "swift_version": "5.0",
+  "frameworks": "UIKit"
+}
