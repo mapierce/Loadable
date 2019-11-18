@@ -9,11 +9,11 @@ import UIKit
 
 extension UIColor {
 
-    func darken(by percent: Float = 0.1) -> UIColor {
+    func darken(by percent: Float = 0.15) -> UIColor {
         return alterColor(by: percent, with: -)
     }
 
-    func brighten(by percent: Float = 0.1) -> UIColor {
+    func brighten(by percent: Float = 0.15) -> UIColor {
         return alterColor(by: percent, with: +)
     }
 
