@@ -118,8 +118,7 @@ extension UIView: Progressable {
     }
 
     private func updatePercentageLabel(to percentage: Float) {
-        guard showPercentage else { return }
-        if percentageLabel == nil {
+        if percentageLabel == nil && showPercentage {
             percentageLabel = UILabel()
             percentageLabel?.font = UIFont.systemFont(ofSize: progressPercentageFontSize, weight: .semibold)
             percentageLabel?.textColor = progressPercentageFontColor
@@ -140,6 +139,9 @@ extension UIView: Progressable {
                                             multiplier: 1.0,
                                             constant: Constants.padding)
             addConstraints([trailing, bottom])
+        } else if percentageLabel != nil && !showPercentage {
+            percentageLabel?.removeFromSuperview()
+            percentageLabel = nil
         }
         percentageLabel?.text = "\(Int(percentage * 100))%"
         percentageLabel?.sizeToFit()
