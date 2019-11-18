@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3427EBF72383304200E7C292 /* ControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3427EBF62383304200E7C292 /* ControlView.xib */; };
+		3427EBF92383304D00E7C292 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3427EBF82383304D00E7C292 /* ControlView.swift */; };
+		3427EBFC2383308D00E7C292 /* UIView+Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3427EBFB2383308D00E7C292 /* UIView+Loader.swift */; };
+		3427EBFF238336B200E7C292 /* ControlCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3427EBFE238336B200E7C292 /* ControlCell.xib */; };
+		3427EC01238336BB00E7C292 /* ControlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3427EC00238336BB00E7C292 /* ControlCell.swift */; };
+		3427EC042383384200E7C292 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3427EC032383384200E7C292 /* BaseTableViewController.swift */; };
+		3427EC062383388F00E7C292 /* UITableViewCell+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3427EC052383388F00E7C292 /* UITableViewCell+Identifier.swift */; };
+		3427EC09238339B800E7C292 /* ControlConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3427EC08238339B800E7C292 /* ControlConfig.swift */; };
+		3427EC0B23833DB900E7C292 /* UIView+Fill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3427EC0A23833DB900E7C292 /* UIView+Fill.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -28,6 +37,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3427EBF62383304200E7C292 /* ControlView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ControlView.xib; sourceTree = "<group>"; };
+		3427EBF82383304D00E7C292 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
+		3427EBFB2383308D00E7C292 /* UIView+Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Loader.swift"; sourceTree = "<group>"; };
+		3427EBFE238336B200E7C292 /* ControlCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ControlCell.xib; sourceTree = "<group>"; };
+		3427EC00238336BB00E7C292 /* ControlCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlCell.swift; sourceTree = "<group>"; };
+		3427EC032383384200E7C292 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		3427EC052383388F00E7C292 /* UITableViewCell+Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Identifier.swift"; sourceTree = "<group>"; };
+		3427EC08238339B800E7C292 /* ControlConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlConfig.swift; sourceTree = "<group>"; };
+		3427EC0A23833DB900E7C292 /* UIView+Fill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Fill.swift"; sourceTree = "<group>"; };
 		587D5D06800A5CA8ABB82DF7 /* Pods-Progressable_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Progressable_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Progressable_Tests/Pods-Progressable_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Progressable_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Progressable_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,6 +98,50 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		3427EBF52383303100E7C292 /* Control View */ = {
+			isa = PBXGroup;
+			children = (
+				3427EBF62383304200E7C292 /* ControlView.xib */,
+				3427EBF82383304D00E7C292 /* ControlView.swift */,
+			);
+			path = "Control View";
+			sourceTree = "<group>";
+		};
+		3427EBFA2383307600E7C292 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3427EBFB2383308D00E7C292 /* UIView+Loader.swift */,
+				3427EC0A23833DB900E7C292 /* UIView+Fill.swift */,
+				3427EC052383388F00E7C292 /* UITableViewCell+Identifier.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3427EBFD2383369B00E7C292 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3427EBFE238336B200E7C292 /* ControlCell.xib */,
+				3427EC00238336BB00E7C292 /* ControlCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3427EC022383383200E7C292 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3427EC032383384200E7C292 /* BaseTableViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		3427EC072383395B00E7C292 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3427EC08238339B800E7C292 /* ControlConfig.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		430C637888BE43623445B922 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,8 +176,11 @@
 			isa = PBXGroup;
 			children = (
 				C1605E78237EFC1D00E40F93 /* App Delegate */,
-				C1605E79237EFC3B00E40F93 /* Views */,
+				3427EC022383383200E7C292 /* Base */,
+				3427EC072383395B00E7C292 /* Data */,
+				3427EBFA2383307600E7C292 /* Extensions */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				C1605E79237EFC3B00E40F93 /* Views */,
 			);
 			name = "Example for Progressable";
 			path = Progressable;
@@ -169,6 +234,8 @@
 		C1605E79237EFC3B00E40F93 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3427EBFD2383369B00E7C292 /* Cells */,
+				3427EBF52383303100E7C292 /* Control View */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 			);
@@ -262,8 +329,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3427EBF72383304200E7C292 /* ControlView.xib in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				3427EBFF238336B200E7C292 /* ControlCell.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,7 +420,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3427EC042383384200E7C292 /* BaseTableViewController.swift in Sources */,
+				3427EC01238336BB00E7C292 /* ControlCell.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				3427EBFC2383308D00E7C292 /* UIView+Loader.swift in Sources */,
+				3427EBF92383304D00E7C292 /* ControlView.swift in Sources */,
+				3427EC09238339B800E7C292 /* ControlConfig.swift in Sources */,
+				3427EC062383388F00E7C292 /* UITableViewCell+Identifier.swift in Sources */,
+				3427EC0B23833DB900E7C292 /* UIView+Fill.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
