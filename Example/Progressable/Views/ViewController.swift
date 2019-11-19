@@ -25,21 +25,33 @@ class ViewController: BaseTableViewController {
     }
     
     // MARK: - Private functions
+
+    private func addDoneButtonToKeyboard() -> UIToolbar {
+        let doneToolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 44))
+        let doneButton = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(doneButtonTapped))
+        doneToolBar.items = [doneButton]
+        doneToolBar.sizeToFit()
+        return doneToolBar
+    }
     
     private func setupData() {
-        let controlOne = ControlConfig(progress: Progress(totalUnitCount: 100),
+        let controlOne = ControlConfig(title: "This is a UIView",
+                                       progress: Progress(totalUnitCount: 100),
                                        animate: true,
                                        showPercentage: true,
                                        clearOnComplete: true)
-        let controlTwo = ControlConfig(progress: Progress(totalUnitCount: 100),
+        let controlTwo = ControlConfig(title: "This is a UIButton",
+                                       progress: Progress(totalUnitCount: 100),
                                        animate: false,
                                        showPercentage: true,
                                        clearOnComplete: true)
-        let controlThree = ControlConfig(progress: Progress(totalUnitCount: 100),
+        let controlThree = ControlConfig(title: "This is a UITextField",
+                                         progress: Progress(totalUnitCount: 100),
                                          animate: false,
                                          showPercentage: false,
                                          clearOnComplete: true)
-        let controlFour = ControlConfig(progress: Progress(totalUnitCount: 100),
+        let controlFour = ControlConfig(title: "This is a UISegmentControl",
+                                        progress: Progress(totalUnitCount: 100),
                                         animate: false,
                                         showPercentage: false,
                                         clearOnComplete: false)
@@ -55,20 +67,32 @@ class ViewController: BaseTableViewController {
         let viewTwo = UIButton(frame: .zero)
         viewTwo.backgroundColor = .green
         viewTwo.setTitle("UIButton", for: .normal)
-//        let viewTwo = UIView(frame: .zero)
-//        viewTwo.backgroundColor = .blue
+        viewTwo.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
         let viewThree = UITextField(frame: .zero)
-        viewThree.text = "This is a text field"
+        viewThree.text = "I'm a text field, edit me!"
+        viewThree.textColor = .white
         viewThree.backgroundColor = .blue
-        let viewFour = UILabel(frame: .zero)
-        viewFour.text = "UILabel"
-        viewFour.backgroundColor = .red
+        viewThree.inputAccessoryView = addDoneButtonToKeyboard()
+        let viewFour = UISegmentedControl(items: ["One", "Two"])
         views = [viewOne, viewTwo, viewThree, viewFour]
     }
     
     private func setupTableView() {
         tableView.dataSource = self
         registerCell(ControlCell.self, in: tableView)
+    }
+
+    // MARK: - Private actions
+
+    @objc private func buttonTapped(_ sender: Any) {
+        let alert = UIAlertController(title: "Button tapped", message: nil, preferredStyle: .alert)
+        let action = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+    }
+
+    @objc private func doneButtonTapped(_ sender: Any) {
+        view.endEditing(true)
     }
 
 }

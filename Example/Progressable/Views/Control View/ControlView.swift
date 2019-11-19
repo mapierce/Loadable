@@ -9,7 +9,8 @@
 import UIKit
 
 class ControlView: UIView {
-    
+
+    @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var containerView: UIView!
     @IBOutlet private weak var animateSwitch: UISwitch!
     @IBOutlet private weak var showPercentageSwitch: UISwitch!
@@ -42,6 +43,7 @@ class ControlView: UIView {
         containerView.addSubview(subview)
         subview.pinToParent()
         subview.layer.cornerRadius = 15.0
+        titleLabel.text = config.title
         setupSwitches(with: config)
         setupViewProgress(with: config)
     }
