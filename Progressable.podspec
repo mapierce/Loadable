@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Progressable'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'Make any UIView a UIProgressView'
   s.description      = <<-DESC
 Now you can make any UIView or subclass into a UIProgressView and show progress wherever you like
