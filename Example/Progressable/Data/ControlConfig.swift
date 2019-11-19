@@ -9,13 +9,15 @@
 import Foundation
 
 class ControlConfig {
-    
-    var progress: Progress
+
+    let title: String
+    let progress: Progress
     var animate: Bool
     var showPercentage: Bool
     var clearOnComplete: Bool
     
-    init(progress: Progress, animate: Bool, showPercentage: Bool, clearOnComplete: Bool) {
+    init(title: String, progress: Progress, animate: Bool, showPercentage: Bool, clearOnComplete: Bool) {
+        self.title = title
         self.progress = progress
         self.animate = animate
         self.showPercentage = showPercentage
