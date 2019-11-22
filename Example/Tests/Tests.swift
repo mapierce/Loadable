@@ -1,5 +1,5 @@
 import XCTest
-import Progressable
+import Loadable
 
 class Tests: XCTestCase {
     

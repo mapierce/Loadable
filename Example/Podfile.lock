@@ -1,16 +1,16 @@
 PODS:
-  - Progressable (0.1.0)
+  - Loadable (1.0.0)
 
 DEPENDENCIES:
-  - Progressable (from `../`)
+  - Loadable (from `../`)
 
 EXTERNAL SOURCES:
-  Progressable:
+  Loadable:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Progressable: 697350e290ac13c16013f7515b721d0b053f91a0
+  Loadable: 9ce70eb7f55b146e3eb1be8d56ab7b4b21ecdbca
 
-PODFILE CHECKSUM: fc637d27f3a4dba6314cf883b3989f688d715484
+PODFILE CHECKSUM: 801068602897b195100f287e6ba010c61412067a
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.8.4

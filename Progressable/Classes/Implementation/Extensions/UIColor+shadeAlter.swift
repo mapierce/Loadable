@@ -1,6 +1,6 @@
 //
 //  UIColor+shadeAlter.swift
-//  Progressable
+//  Loadable
 //
 //  Created by Matthew Pierce on 15/11/2019.
 //

@@ -1,0 +1,6 @@
+framework module Loadable {
+  umbrella header "Loadable-umbrella.h"
+
+  export *
+  module * { export * }
+}

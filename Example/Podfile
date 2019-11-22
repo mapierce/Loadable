@@ -1,10 +1,10 @@
 platform :ios, '11.0'
 use_frameworks!
 
-target 'Progressable_Example' do
-  pod 'Progressable', :path => '../'
+target 'Loadable_Example' do
+  pod 'Loadable', :path => '../'
 
-  target 'Progressable_Tests' do
+  target 'Loadable_Tests' do
     inherit! :search_paths
   end
 end

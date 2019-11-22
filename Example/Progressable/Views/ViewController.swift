@@ -1,13 +1,13 @@
 //
 //  ViewController.swift
-//  Progressable
+//  Loadable
 //
 //  Created by Matthew Pierce on 11/15/2019.
 //  Copyright (c) 2019 Matthew Pierce. All rights reserved.
 //
 
 import UIKit
-import Progressable
+import Loadable
 
 class ViewController: BaseTableViewController {
 
