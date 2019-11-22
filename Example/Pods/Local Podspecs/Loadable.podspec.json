@@ -19,7 +19,7 @@
   "platforms": {
     "ios": "11.0"
   },
-  "source_files": "Progressable/Classes/**/*",
+  "source_files": "Loadable/Classes/**/*",
   "swift_versions": "5.0",
   "frameworks": "UIKit",
   "swift_version": "5.0"

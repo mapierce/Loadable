@@ -20,7 +20,7 @@ Now you can make any UIView or subclass into a UIProgressView and show progress 
   s.source           = { :git => 'https://github.com/Matthew Pierce/Loadable.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/PierceMatthew'
   s.ios.deployment_target = '11.0'
-  s.source_files = 'Progressable/Classes/**/*'
+  s.source_files = 'Loadable/Classes/**/*'
   s.swift_version = '5.0'
   s.frameworks = 'UIKit'
 end
