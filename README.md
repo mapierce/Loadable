@@ -7,7 +7,12 @@
 
 ## 🤔 About 
 
-Loadable allows you to attach `Progress` to any `UIView` or subclass and then use the `UIView` to display progress. You can animate the progress, set the progress colour and show or hide the percentage progress in the bottom corner of your view.
+Loadable allows you to attach `Progress` to any `UIView` or subclass and then use the `UIView` to display progress. You can animate the progress, set the progress colour and show or hide the percentage progress in the bottom corner of your view. Please see below for demos of Loadable working on a `UIView` and a `UISegmentControl`.
+
+<p align="center">
+  <img src="https://i.imgur.com/g73LOXs.gif">  
+  <img src="https://i.imgur.com/g2nBipd.gif">  
+</p>
 
 ## 🔛 Demo 
 
